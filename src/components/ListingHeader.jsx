@@ -46,7 +46,7 @@ const ListingHeader = ({ title = "Romantic Jacuzzi 1BHK Candolim | Mirashya UG10
             type="button"
             id="shareBtn"
             onClick={handleShare}
-            className="flex items-center gap-2 text-sm font-medium text-gray-800 hover:bg-gray-100 px-2 py-2 rounded-lg transition-colors underline-offset-4 hover:underline"
+            className="flex items-center gap-2 tracking-normal text-sm font-medium text-gray-800 hover:bg-gray-100 px-2 py-2 rounded-lg transition-colors underline-offset-4 hover:underline"
           >
             <span className=""><ShareIcon /></span>
             <span className="underline">Share</span>
@@ -56,7 +56,7 @@ const ListingHeader = ({ title = "Romantic Jacuzzi 1BHK Candolim | Mirashya UG10
             type="button"
             id="saveBtn"
             onClick={() => setSaved((prev) => !prev)}
-            className="flex items-center gap-2 text-sm font-medium text-gray-800 hover:bg-gray-100 px-2 py-2 rounded-lg transition-colors underline-offset-4 hover:underline"
+            className="flex items-center gap-2 tracking-normal text-sm font-medium text-gray-800 hover:bg-gray-100 px-2 py-2 rounded-lg transition-colors underline-offset-4 hover:underline"
           >
             <span className=""><HeartIcon saved={saved} /></span>
             <span className="underline">{saved ? 'Saved' : 'Save'}</span>

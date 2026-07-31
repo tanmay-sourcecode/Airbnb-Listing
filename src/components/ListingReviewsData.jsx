@@ -71,6 +71,7 @@ export const REVIEWS = [
     initial: 'A',
     bg: 'rgb(247, 237, 226)',
     color: 'rgb(193, 133, 42)',
+    categories: ['Comfort', 'Hospitality'],
   },
   {
     id: 2,
@@ -81,6 +82,7 @@ export const REVIEWS = [
     avatarType: 'img',
     src: '/assets/rev1.jpeg',
     hasShowMore: true,
+    categories: ['Cleanliness', 'Comfort', 'Accuracy'],
   },
   {
     id: 3,
@@ -90,6 +92,7 @@ export const REVIEWS = [
     comment: 'the host nitish was really great help',
     avatarType: 'img',
     src: '/assets/rev2.jpeg',
+    categories: ['Hospitality'],
   },
   {
     id: 4,
@@ -102,6 +105,7 @@ export const REVIEWS = [
     bg: 'rgb(239, 234, 247)',
     color: 'rgb(139, 111, 196)',
     hasShowMore: true,
+    categories: ['Cleanliness', 'Hot tub'],
   },
   {
     id: 5,
@@ -111,6 +115,7 @@ export const REVIEWS = [
     comment: "Great great experience living out there , can't expect more , will always look for it in the future and will recommend my friends too.",
     avatarType: 'img',
     src: '/assets/rev3.jpeg',
+    categories: ['Hospitality'],
   },
   {
     id: 6,
@@ -120,5 +125,6 @@ export const REVIEWS = [
     comment: 'Great place. Exactly as described in the listing.',
     avatarType: 'img',
     src: '/assets/rev4.jpeg',
+    categories: ['Accuracy'],
   },
 ];

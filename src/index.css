@@ -10,8 +10,11 @@
   src: url('/assets/fonts/AirbnbCerealVF.woff2') format('woff2-variations');
   font-weight: 200 900;
   font-display: swap;
+  letter-spacing: 0em;
 }
-
+* {
+  letter-spacing: 0em;
+}
 :root {
   --font: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, "system-ui", Roboto, "Helvetica Neue", sans-serif;
   --font-cereal: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;

@@ -19,6 +19,10 @@ const ListingReviews = () => {
     setExpandedReviews((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
+  const filteredReviews = activePill
+    ? REVIEWS.filter((rev) => rev.categories?.includes(activePill))
+    : REVIEWS;
+
   return (
     <section className="py-12 border-t border-gray-200" id="reviews">
       {/* ── 1. Hero Guest Favourite Rating Header ── */}
@@ -125,7 +129,7 @@ const ListingReviews = () => {
 
       {/* ── 4. Reviews Cards Track (_RRsDBp & _OxFhJw) ── */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-        {REVIEWS.map((rev) => (
+        {filteredReviews.map((rev) => (
           <div key={rev.id} className="space-y-3">
             {/* User Header */}
             <div className="head flex items-center gap-3">
