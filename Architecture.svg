@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2534.4439999999995 807.7333333333333" width="2534.4439999999995" height="807.7333333333333" style="--bg:#FFFFFF;--fg:#3B3B3B;--line:#3B3B3B;--accent:#005FB8;--muted:#3B3B3BCC;--surface:#F8F8F8;--border:#3B3B3B;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Tier1" data-label="📱 1. Client Layer">
+  <rect x="40" y="40" width="232.524" height="153.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="40" width="232.524" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">📱 1. Client Layer</text>
+</g>
+<g class="subgraph" data-id="Tier2" data-label="🌐 2. Edge &amp; Ingress Layer">
+  <rect x="304.52400000000006" y="97.41666666666669" width="601.8309999999999" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="304.52400000000006" y="97.41666666666669" width="601.8309999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="316.52400000000006" y="111.41666666666669" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">🌐 2. Edge &amp; Ingress Layer</text>
+</g>
+<g class="subgraph" data-id="Tier3" data-label="⚡ 3. Stateless Compute Layer (AWS EKS)">
+  <rect x="950.355" y="122.86666666666667" width="458.81699999999984" height="261.40000000000003" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="950.355" y="122.86666666666667" width="458.81699999999984" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="962.355" y="136.86666666666667" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">⚡ 3. Stateless Compute Layer (AWS EKS)</text>
+</g>
+<g class="subgraph" data-id="Tier4" data-label="💾 4. Data &amp; Event Platform">
+  <rect x="1581.32" y="205.76666666666665" width="540.807" height="424.30000000000007" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="1581.32" y="205.76666666666665" width="540.807" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1593.32" y="219.76666666666665" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">💾 4. Data &amp; Event Platform</text>
+</g>
+<g class="subgraph" data-id="Tier5" data-label="🔄 5. Async Workers &amp; Platform Ops">
+  <rect x="2243.3949999999995" y="506.3333333333333" width="251.04899999999998" height="261.40000000000003" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="2243.3949999999995" y="506.3333333333333" width="251.04899999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="2255.3949999999995" y="520.3333333333333" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">🔄 5. Async Workers &amp; Platform Ops</text>
+</g>
+<polyline class="edge" data-from="WEB" data-to="CDN" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="239.481,102.45 272.524,102.45 294.52400000000006,102.45 294.52400000000006,177.28333333333336 304.52400000000006,177.28333333333336 320.52400000000006,177.28333333333336" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="MOB" data-to="CDN" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="256.524,159.35000000000002 272.524,159.35000000000002 282.52400000000006,159.35000000000002 282.52400000000006,159.35000000000002 304.52400000000006,159.35000000000002 320.52400000000006,159.35000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="GW" data-to="APP" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="890.355,168.3166666666667 906.355,168.3166666666667 928.355,168.31666666666672 928.355,193.76666666666665 950.355,193.76666666666668 966.355,193.76666666666668" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="GW" data-to="SEARCH" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="758.23,195.2166666666667 758.23,220.2166666666667 1067.7285,220.2166666666667 1067.7285,245.21666666666667" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="GW" data-to="MSG" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="758.23,195.2166666666667 758.23,220.2166666666667 1092.1815,220.2166666666667 1092.1815,326.01666666666665" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="APP" data-to="CACHE" data-style="solid" data-arrow-start="true" data-arrow-end="true" points="1369.1719999999998,202.73333333333335 1381.1719999999998,202.73333333333335 1381.1719999999998,203.76666666666668 1409.1719999999998,203.76666666666668 1545.32,203.76666666666665 1545.32,591.4666666666667 1581.32,593.5 1597.32,593.5" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead-start)" />
+<polyline class="edge" data-from="APP" data-to="DB" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1369.1719999999998,211.70000000000002 1381.1719999999998,211.70000000000002 1381.1719999999998,213.76666666666668 1409.1719999999998,213.76666666666668 1558.32,213.76666666666665 1558.32,283.66666666666663 1581.32,279.1166666666667 1597.32,279.1166666666667" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="APP" data-to="OBJ" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1369.1719999999998,175.83333333333334 1381.1719999999998,175.83333333333334 1381.1719999999998,173.76666666666668 1409.1719999999998,173.76666666666668 1419.1719999999998,173.76666666666665 1419.1719999999998,371.4666666666667 1581.32,359.9166666666667 1597.32,359.9166666666667" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="APP" data-to="KAFKA" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Domain Events" points="1369.1719999999998,184.8 1381.1719999999998,184.8 1381.1719999999998,183.76666666666668 1409.1719999999998,183.76666666666668 1470.1719999999998,183.76666666666665 1470.1719999999998,492.3666666666668 1581.32,492.3666666666667 1597.32,492.3666666666667" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SEARCH" data-to="CACHE" data-style="solid" data-arrow-start="true" data-arrow-end="true" points="1067.7285,299.01666666666665 1067.7285,362.19166666666666 1708.3265,362.19166666666666 1708.3265,548.3" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead-start)" />
+<polyline class="edge" data-from="SEARCH" data-to="ES" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1067.7285,299.01666666666665 1067.7285,362.19166666666666 2011.793,362.19166666666666 2011.793,425.3666666666667" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="KAFKA" data-to="WORK" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Async Jobs" points="1721.521,503.6666666666667 2122.127,503.6666666666667 2177.1269999999995,503.66666666666674 2177.1269999999995,577.2333333333335 2243.3949999999995,575.2 2259.3949999999995,575.2" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="APP" data-to="OBS" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1369.1719999999998,193.76666666666668 1409.1719999999998,193.76666666666668 2233.3949999999995,193.76666666666665 2233.3949999999995,660.0000000000001 2243.3949999999995,660 2259.3949999999995,660" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SEARCH" data-to="OBS" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1067.7285,299.01666666666665 1067.7285,362.19166666666666 2368.5489999999995,362.19166666666666 2368.5489999999995,624.1333333333333" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DB" data-to="DR" data-style="solid" data-arrow-start="true" data-arrow-end="true" points="1694.2475,313.01666666666665 1694.2475,545.875 2355.9519999999993,545.875 2355.9519999999993,697.9333333333334" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead-start)" />
+<polyline class="edge" data-from="OBJ" data-to="DR" data-style="solid" data-arrow-start="true" data-arrow-end="true" points="1678.6865,393.81666666666666 1678.6865,545.875 2355.9519999999993,545.875 2355.9519999999993,697.9333333333334" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead-start)" />
+<polyline class="edge" data-from="CDN" data-to="GW" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="578.105,168.3166666666667 626.105,168.3166666666667" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="KAFKA" data-to="ES" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Search Index Sync" points="1721.521,481.0666666666667 1733.521,481.06666666666666 1733.521,476.06666666666666 1881.4589999999998,476.06666666666666 1881.4589999999998,470.56666666666666 1917.4589999999998,470.56666666666666" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="APP" data-to="KAFKA" data-label="Domain Events">
+  <rect x="1426.1719999999998" y="334.1666666666667" width="87.14800000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1469.7459999999999" y="349.31666666666666" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Domain Events</text>
+</g>
+<g class="edge-label" data-from="KAFKA" data-to="WORK" data-label="Async Jobs">
+  <rect x="2139.1269999999995" y="539.9333333333334" width="75.268" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="2176.7609999999995" y="555.0833333333334" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Async Jobs</text>
+</g>
+<g class="edge-label" data-from="KAFKA" data-to="ES" data-label="Search Index Sync">
+  <rect x="1765.5209999999997" y="460.06666666666666" width="107.938" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1819.4899999999998" y="475.21666666666664" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Search Index Sync</text>
+</g>
+<g class="node" data-id="WEB" data-label="Web Client (React / PWA)" data-shape="rectangle">
+  <rect x="56" y="84" width="183.481" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="147.7405" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Web Client (React / PWA)</text>
+</g>
+<g class="node" data-id="MOB" data-label="Mobile Apps (iOS / Android)" data-shape="rectangle">
+  <rect x="56" y="140.9" width="200.524" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="156.262" y="159.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Mobile Apps (iOS / Android)</text>
+</g>
+<g class="node" data-id="CDN" data-label="CloudFront CDN
+(Edge Assets • Media • DDoS Shield)" data-shape="rectangle">
+  <rect x="320.52400000000006" y="141.41666666666669" width="257.5809999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="449.3145" y="168.3166666666667" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="449.3145" dy="-3.9000000000000012">CloudFront CDN</tspan><tspan x="449.3145" dy="16.900000000000002">(Edge Assets • Media • DDoS Shield)</tspan></text>
+</g>
+<g class="node" data-id="GW" data-label="API Gateway
+(JWT / OAuth Auth • Rate Limit • Route)" data-shape="rectangle">
+  <rect x="626.105" y="141.41666666666669" width="264.24999999999994" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="758.23" y="168.3166666666667" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="758.23" dy="-3.9000000000000012">API Gateway</tspan><tspan x="758.23" dy="16.900000000000002">(JWT / OAuth Auth • Rate Limit • Route)</tspan></text>
+</g>
+<g class="node" data-id="APP" data-label="Core Microservices
+(Users • Listings • Bookings • Payments • Reviews • Wishlist)" data-shape="rectangle">
+  <rect x="966.355" y="166.86666666666667" width="402.81699999999984" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1167.7635" y="193.76666666666668" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1167.7635" dy="-3.9000000000000012">Core Microservices</tspan><tspan x="1167.7635" dy="16.900000000000002">(Users • Listings • Bookings • Payments • Reviews • Wishlist)</tspan></text>
+</g>
+<g class="node" data-id="SEARCH" data-label="Search &amp; Calendar Service
+(Availability • Geo Filter)" data-shape="rectangle">
+  <rect x="966.355" y="245.21666666666667" width="202.74699999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1067.7285" y="272.1166666666667" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1067.7285" dy="-3.9000000000000012">Search &amp; Calendar Service</tspan><tspan x="1067.7285" dy="16.900000000000002">(Availability • Geo Filter)</tspan></text>
+</g>
+<g class="node" data-id="MSG" data-label="Real-Time Messaging &amp; Notifications
+(WebSockets • Push)" data-shape="rectangle">
+  <rect x="966.355" y="326.01666666666665" width="251.65299999999993" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1092.1815" y="352.91666666666663" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1092.1815" dy="-3.9000000000000012">Real-Time Messaging &amp; Notifications</tspan><tspan x="1092.1815" dy="16.900000000000002">(WebSockets • Push)</tspan></text>
+</g>
+<g class="node" data-id="CACHE" data-label="Redis Cluster
+(Sessions • Availability Cache)" data-shape="cylinder">
+  <rect x="1597.32" y="555.3" width="222.01299999999995" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="1597.32" y1="555.3" x2="1597.32" y2="609.0999999999999" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1819.3329999999999" y1="555.3" x2="1819.3329999999999" y2="609.0999999999999" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1708.3265" cy="609.0999999999999" rx="111.00649999999997" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1708.3265" cy="555.3" rx="111.00649999999997" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1708.3265" y="582.1999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1708.3265" dy="-3.9000000000000012">Redis Cluster</tspan><tspan x="1708.3265" dy="16.900000000000002">(Sessions • Availability Cache)</tspan></text>
+</g>
+<g class="node" data-id="DB" data-label="Aurora PostgreSQL
+(Primary + Read Replicas)" data-shape="cylinder">
+  <rect x="1597.32" y="252.21666666666667" width="193.85499999999993" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="1597.32" y1="252.21666666666667" x2="1597.32" y2="306.01666666666665" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1791.175" y1="252.21666666666667" x2="1791.175" y2="306.01666666666665" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1694.2475" cy="306.01666666666665" rx="96.92749999999997" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1694.2475" cy="252.21666666666667" rx="96.92749999999997" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1694.2475" y="279.1166666666667" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1694.2475" dy="-3.9000000000000012">Aurora PostgreSQL</tspan><tspan x="1694.2475" dy="16.900000000000002">(Primary + Read Replicas)</tspan></text>
+</g>
+<g class="node" data-id="ES" data-label="OpenSearch
+(Geo Spatial • Text Index)" data-shape="cylinder">
+  <rect x="1917.4589999999998" y="432.3666666666667" width="188.668" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="1917.4589999999998" y1="432.3666666666667" x2="1917.4589999999998" y2="486.1666666666667" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="2106.127" y1="432.3666666666667" x2="2106.127" y2="486.1666666666667" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="2011.793" cy="486.1666666666667" rx="94.334" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="2011.793" cy="432.3666666666667" rx="94.334" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2011.793" y="459.26666666666665" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2011.793" dy="-3.9000000000000012">OpenSearch</tspan><tspan x="2011.793" dy="16.900000000000002">(Geo Spatial • Text Index)</tspan></text>
+</g>
+<g class="node" data-id="OBJ" data-label="Amazon S3
+(Media • Documents)" data-shape="cylinder">
+  <rect x="1597.32" y="333.01666666666665" width="162.73299999999998" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="1597.32" y1="333.01666666666665" x2="1597.32" y2="386.81666666666666" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1760.0529999999999" y1="333.01666666666665" x2="1760.0529999999999" y2="386.81666666666666" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1678.6865" cy="386.81666666666666" rx="81.36649999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1678.6865" cy="333.01666666666665" rx="81.36649999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1678.6865" y="359.91666666666663" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1678.6865" dy="-3.9000000000000012">Amazon S3</tspan><tspan x="1678.6865" dy="16.900000000000002">(Media • Documents)</tspan></text>
+</g>
+<g class="node" data-id="KAFKA" data-label="Apache Kafka
+(Event Bus)" data-shape="cylinder">
+  <rect x="1597.32" y="465.4666666666667" width="124.20099999999998" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="1597.32" y1="465.4666666666667" x2="1597.32" y2="519.2666666666667" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1721.521" y1="465.4666666666667" x2="1721.521" y2="519.2666666666667" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1659.4205" cy="519.2666666666667" rx="62.10049999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1659.4205" cy="465.4666666666667" rx="62.10049999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1659.4205" y="492.3666666666667" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1659.4205" dy="-3.9000000000000012">Apache Kafka</tspan><tspan x="1659.4205" dy="16.900000000000002">(Event Bus)</tspan></text>
+</g>
+<g class="node" data-id="WORK" data-label="Background Workers
+(Payouts • Index Sync • Email)" data-shape="rectangle">
+  <rect x="2259.3949999999995" y="548.3" width="219.04899999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2368.9194999999995" y="575.1999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2368.9194999999995" dy="-3.9000000000000012">Background Workers</tspan><tspan x="2368.9194999999995" dy="16.900000000000002">(Payouts • Index Sync • Email)</tspan></text>
+</g>
+<g class="node" data-id="OBS" data-label="Observability
+(Prometheus • Grafana • ELK)" data-shape="rectangle">
+  <rect x="2259.3949999999995" y="624.1333333333333" width="218.308" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2368.5489999999995" y="651.0333333333333" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2368.5489999999995" dy="-3.9000000000000012">Observability</tspan><tspan x="2368.5489999999995" dy="16.900000000000002">(Prometheus • Grafana • ELK)</tspan></text>
+</g>
+<g class="node" data-id="DR" data-label="Multi-Region DR
+(Aurora Global • S3 Sync)" data-shape="rectangle">
+  <rect x="2259.3949999999995" y="697.9333333333334" width="193.114" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2355.9519999999993" y="724.8333333333334" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2355.9519999999993" dy="-3.9000000000000012">Multi-Region DR</tspan><tspan x="2355.9519999999993" dy="16.900000000000002">(Aurora Global • S3 Sync)</tspan></text>
+</g>
+</svg>
